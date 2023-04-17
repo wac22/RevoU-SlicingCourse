@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <title>My Website-Homes</title>
+</head>
+<body>
+    <div class="navbar-area">
+    <div class="navbar-logo">
+        <img src="assets/logo.png" class="img-logo">
+    
+    </div>        
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="profile.html"><i class="fa fa-fw fa-search"></i> Our Profile</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Achievement</a> 
+        <a href="#message-us"><i class="fa fa-fw fa-user"></i> Message Us</a>
+      </div>
+    </div>
+
+<div class="content">
+    <section id="header">
+            <div class="header">
+                <h2>Hi <span id="nama-visitor"></span>, Welcome To Website</h2>
+                <h5>Ini adalah website latihan pertama</h5>
+            </div>
+    </section>
+    <section id="img-slider">
+        <img class="corrusel slide" src="assets/img/img1.jpg" />
+        <img class="corrusel slide" src="assets/img/img2.jpg" />
+        <img class="corrusel slide" src="assets/img/img3.jpg" />
+    </section>
+
+     <section id="facilitation"  class="border-top-line">
+            <div class="header">
+                <h2>Our Facilitation</h2>
+            </div>
+            <div class="list-facilitation">
+                <div class="person">  
+                <img class="img-person" src="assets/img/luxxy.jpg" />
+                <span class="name-person">Business Analyst</span>             
+                </div>  
+                
+                <div class="person">  
+                <img class="img-person" src="assets/img/luxxy.jpg" />
+                <span class="name-person">Front-End Dev</span>             
+                </div>  
+                
+                <div class="person">  
+                <img class="img-person" src="assets/img/luxxy.jpg" />
+                <span class="name-person">Back-End Dev</span>             
+                </div>  
+                    
+            </div>
+    </section>
+
+
+     <section id="message-us"  class="border-top-line">
+            <div class="header">
+                <h2>Message Us</h2>
+            </div>
+            <div class="message-us">
+                <div class="form-us">  
+                     <div class="flex-container">
+                      <div class="flex-item-left">Nama</div>
+                      <div class="flex-item-mid">:</div>
+                      <div class="flex-item-right">
+                          <input type="text" class="input-form" name="name" id="name">
+                      </div>
+                    </div>  
+                      <div class="flex-container">
+                      <div class="flex-item-left">Tanggal Lahir</div>
+                    <div class="flex-item-mid">:</div>
+                      <div class="flex-item-right">
+                            <input type="date" class="input-form" name="tgl" id="tgl">
+                      </div>
+                    </div>    
+                     <div class="flex-container">
+                      <div class="flex-item-left">Jenis Kelamin</div>
+                    <div class="flex-item-mid">:</div>
+                      <div class="flex-item-right">
+                           <input class="radio-k" type="radio" id="laki" name="jk" value="laki">
+                                    <label for="laki">Laki-Laki</label>
+                                    <input class="radio-k" type="radio" id="perempuan" name="jk" value="perempuan">
+                                    <label for="perempuan">Perempuan</label><br>
+                      </div>
+                    </div> 
+                     <div class="flex-container">
+                      <div class="flex-item-left">Pesan</div>
+                    <div class="flex-item-mid">:</div>
+                      <div class="flex-item-right">
+                        <textarea type="date" class="input-form-teaxtarea" name="pesan" id="pesan" rows="8"></textarea>
+
+                      </div>
+                    </div> 
+                     <div class="flex-container">
+                        <div class="flex-item-full">
+                            <button class="btn-submit" onclick="check()" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="result-us">  
+                             <div class="flex-container">
+                              <div class="flex-item-left">Current time</div>
+                              <div class="flex-item-mid">:</div>
+                              <div class="flex-item-right">
+                                  <span id="get-input-time"></span>
+                              </div>
+                            </div>  
+
+
+                             <div class="flex-container">
+                              <div class="flex-item-left">Nama</div>
+                              <div class="flex-item-mid">:</div>
+                              <div class="flex-item-right">
+                                  <span id="get-input-nama"></span>
+                              </div>
+                            </div>  
+
+
+
+                             <div class="flex-container">
+                              <div class="flex-item-left">Tanggal lahir</div>
+                              <div class="flex-item-mid">:</div>
+                              <div class="flex-item-right">
+                                  <span id="get-input-tgl"></span>
+                              </div>
+                            </div>  
+
+
+                             <div class="flex-container">
+                              <div class="flex-item-left">Jenis kelamin</div>
+                              <div class="flex-item-mid">:</div>
+                              <div class="flex-item-right">
+                                  <span id="get-input-jk"></span>
+                              </div>
+                            </div>  
+
+
+                              <div class="flex-container">
+                              <div class="flex-item-left">Pesan</div>
+                              <div class="flex-item-mid">:</div>
+                              <div class="flex-item-right">
+                                  <span id="get-input-pesan"></span>
+                              </div>
+                            </div>  
+
+
+                                  
+                </div>  
+                
+               
+                    
+            </div>
+            <br><br>
+    </section>
+
+
+        <section id="footer">
+            <div class="footer">
+                <h6>Created by Willy Andrian Cahyadi</h6>
+            </div>
+        </section>
+
+</div>
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function check(){
+                var name = document.getElementsByName("name")[0].value;
+                var tgl = document.getElementsByName("tgl")[0].value;
+                var jk = document.getElementsByName("jk")[0].value;
+                var pesan = document.getElementsByName("pesan")[0].value;
+                var submitdate = new Date();
+                if (name=='') {
+                    alert('Harap lengkapi isian nama'); return false;
+                }if (tgl=='') {
+                    alert('Harap lengkapi isian Tanggal lahir'); return false;
+                }if (jk=='') {
+                    alert('Harap lengkapi isian jenis kelamin'); return false;
+                }if (pesan=='') {
+                    alert('Harap lengkapi isian pesan'); return false;
+                }
+
+                document.getElementById("get-input-time").innerText =submitdate;
+                document.getElementById("get-input-nama").innerText =name;
+                document.getElementById("get-input-tgl").innerText =tgl;
+                document.getElementById("get-input-jk").innerText =jk;
+                document.getElementById("get-input-pesan").innerText =pesan;
+
+
+
+    }
+
+    
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function nextSlide(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var imagelistDT = document.getElementsByClassName("slide");
+        if (n > imagelistDT.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = imagelistDT.length
+        }
+        for (i = 0; i < imagelistDT.length; i++) {
+            imagelistDT[i].style.display = "none";
+        }
+        imagelistDT[slideIndex - 1].style.display = "block";
+    }
+
+     setInterval(() => {
+        nextSlide(1)
+    }, 5000);
+
+
+
+      function askName() {
+             var nama_visitor = prompt("Silahkan masukkan nama kamu !");
+             document.getElementById("nama-visitor").innerText = nama_visitor;
+        }
+        window.onload = askName;
+
+</script>

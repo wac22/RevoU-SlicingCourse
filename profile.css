@@ -1,0 +1,150 @@
+
+body{
+    font-family : 'verdana';
+    margin:0;
+}
+
+ .img-logo{
+       width: 80px;
+       padding: 5px 5px 5px 30px;
+    }
+
+.navbar-area{
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0091;
+
+}
+
+.list-section{
+     display : flex;
+    flex-wrap : nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.bg_1{
+    background-color: aliceblue;
+}
+.bg_2{
+    background-color: aliceblue;
+}
+
+
+
+
+
+.img-tag{
+    border-radius: 20px;
+    width: 170px;
+    height: 170px;
+}
+
+
+.img-area{
+    border-radius: 20px;
+    width: auto;
+    height: 300px;
+}
+
+
+
+.img-vm{
+    width: auto;
+    height: 300px;
+    padding-left: 30px;
+}
+
+
+.tag{
+    padding-right: 50px;
+    text-align: center;
+}
+
+.name-tag{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.border-top-line{
+    margin-top: 50px;
+}
+.content{
+    padding: 5px 5% 10px 5%;
+}
+
+
+.footer{
+    text-align: end;
+}
+
+.navbar {
+    background-color: #fff;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 30px 10px 1px 12px;
+    color: #9f9f9f;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 2px solid #ededed;
+  }
+  
+  .active {
+    font-weight: 700;
+    color: #FFC107 !important;
+  }
+
+
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+          padding: 30px 10px 10px 12px;
+    }
+
+    .img-logo{
+       display : none;
+    }
+    .navbar-area{
+        display : flex !important;
+        flex-wrap : wrap !important;
+        justify-content: space-between !important;
+    }
+    .navbar {
+        display : flex !important;
+        flex-wrap : nowrap !important;
+        justify-content: space-between !important;
+      }
+
+      .img-tag{
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+    }
+     .list-section{
+        display : flex !important;
+        flex-wrap : wrap !important;
+        justify-content: space-between !important;
+    }
+
+  }
